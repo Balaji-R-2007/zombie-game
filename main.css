@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+  background-color: #333;
+  color: white;
+  margin: 10px auto;
+}
+
+#gameBody {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  overflow: hidden;
+}
+
+.zombie-image {
+  position: absolute;
+  height: 100px;
+  bottom: 0;
+  animation: moveUp 5s linear infinite;
+}
+
+#lives,
+#timer {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  margin: 0 10px;
+}
+
+#timer {
+  right: 10px;
+}
+
+#lives {
+  left: 10px;
+}
+
+.home,
+.game-screen,
+.win-bg,
+.gameover-bg {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.home {
+  background-image: url('https://github.com/Kalvium-Program/zombie-shoot-boilerplate/blob/main/assets/zombie-shoot-background.png?raw=true');
+}
+
+.game-screen {
+  display: none;
+  background-image: url('https://github.com/Kalvium-Program/zombie-shoot-boilerplate/blob/main/assets/zombie-shoot-game-background.png?raw=true');
+}
+
+.win-bg {
+  display: none;
+  background-image: url('https://github.com/Kalvium-Program/zombie-shoot-boilerplate/blob/main/assets/zombie-shoot-background.png?raw=true');
+}
+
+.gameover-bg {
+  display: none;
+  background-image: url('https://github.com/Kalvium-Program/zombie-shoot-boilerplate/blob/main/assets/zombie-shoot-background.png?raw=true');
+}
+
+@keyframes moveUp {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: 100%;
+  }
+}

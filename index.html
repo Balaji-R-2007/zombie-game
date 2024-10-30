@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>zombie shoot</title>
+
+    <!-- <link rel="shortcut icon" type="image/png" href="jasmine/jasmine-2.8.0/face.png"> -->
+ 
+    <link rel="stylesheet" href="main.css" />
+    <script src="app.js"></script>
+ 
+  </head>
+
+  <body>
+    <div class="home" id="home">
+      <img
+        src="https://github.com/Kalvium-Program/zombie-shoot-final/blob/main/assets/logo.png?raw=true"
+        alt="logo"
+        id="logo"
+      />
+      <div class="flex-centered" id="start-button">START</div>
+    </div>
+
+    <!-- Win Screen -->
+    <div class="win-bg" id="win">
+      <img
+        src="https://github.com/Kalvium-Program/zombie-shoot-boilerplate/blob/main/assets/brain.png?raw=true"
+        alt=""
+      />
+      <img
+        src="https://github.com/Kalvium-Program/zombie-shoot-boilerplate/blob/main/assets/YAY%20text.png?raw=true"
+        alt=""
+      />
+      <h2>Awesome, you survived the zombie breakout</h2>
+      <div class="flex-centered" id="play-again-button">Play Again</div>
+    </div>
+
+    <!-- Game Over Screen -->
+    <div class="gameover-bg" id="game-over">
+      <img
+        src="https://github.com/Kalvium-Program/zombie-shoot-boilerplate/blob/main/assets/zombie-hand.png?raw=true"
+        alt=""
+      />
+      <img
+        src="https://github.com/Kalvium-Program/zombie-shoot-final/blob/main/assets/Oops%20text.png?raw=true"
+        alt=""
+      />
+      <h2>You got eaten by the zombie</h2>
+      <div class="flex-centered" id="try-again-button">Try Again</div>
+    </div>
+
+    <!-- Game Screen -->
+    <div id="game-screen" class="game-screen">
+      <div id="gameBody"></div>
+      <span id="lives">Lives: 4</span>
+      <span id="timer">Time: 30</span>
+    </div>
+
+    
+  </body>
+</html>
